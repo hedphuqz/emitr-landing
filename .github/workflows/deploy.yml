@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      BASE_PATH: /emitr-landing/
+      BASE_PATH: /emitr-landing
 
 
     steps:
