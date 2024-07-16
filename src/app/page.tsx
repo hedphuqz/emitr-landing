@@ -1,7 +1,8 @@
 'use client'
 import anime from "animejs";
 import { useEffect } from "react";
-
+import img from './bg.jpg'
+import Image from "next/image";
 export default function Home() {
   // Used to 
   const headline = 'EMITR'.split('').map((l, i) => <span key={i} className="inline-block hover:opacity-100 hover:duration-100 duration-1000 opacity-70">{l}</span>)
@@ -30,8 +31,8 @@ export default function Home() {
 
   return (
     <main className="h-[calc(100dvh)] relative bg-black">
-      <img
-        src="/assets/img/bg.jpg"
+      <Image
+        src={img}
         className="absolute w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 flex flex-col justify-center items-center">
