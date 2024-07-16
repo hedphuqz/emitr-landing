@@ -32,6 +32,7 @@ export default function Home() {
   return (
     <main className="h-[calc(100dvh)] relative bg-black">
       <Image
+        alt="Background Image"
         src={img}
         className="absolute w-full h-full object-cover object-center"
       />
